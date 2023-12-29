@@ -191,3 +191,25 @@ section > .container {
   height: 300px;
   object-fit: cover;
 }
+
+@media(maxwidth: 1080px) {
+.grid, 
+.showcase.grid,
+.stats .grid,
+.cli .grid
+.cloud .grid{
+grid-template-columns: 1fr;
+grid-template-row: 1fr;
+.showcase {
+height: auto;}
+.showcase-text {
+	text-align: center
+	margin-top: 40px;}
+.showcaser-form {
+justify-self: center;
+margin: auto;}
+.cli .grid > *:first-child{
+	grid-column: 1/span 2;
+	grid-row: 1/span 2;
+}
+
